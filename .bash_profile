@@ -21,6 +21,7 @@ alias pi='pod install --repo-update'
 alias pru='pod repo update'
 alias st='/Applications/Sublime\ Text.app/Contents/MacOS/sublime_text'
 alias gitpush=~/.my_syn_tools/.syn_tools/git_push
+alias killflutter=ps -ef|grep flutter|awk '{print $2}'|xargs kill -9
 my_blog=~/blog
 
 
