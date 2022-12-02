@@ -1,0 +1,76 @@
+#!/bin/bash
+
+echo "executing my profile:$0 for cocoapod"
+
+
+increase_version () {
+	podspecFile=$(ls *.podspec)
+	echo "podspecFile:$podspecFile"
+
+	echo -e "\n即将递增版本号..."
+	version_line_str=$(cat *.podspec|grep "s.version ")
+	current_version=${version_line_str#*= }
+	current_version=$(echo ${current_version//\'/})
+	echo "current_version:$current_version"
+
+	final_version=$(echo $current_version|awk -F. -v OFS=. 'NF==1{print ++$NF}; NF>1{if(length($NF+1)>length($NF))$(NF-1)++; $NF=sprintf("%0*d", length($NF), ($NF+1)%(10^length($NF))); print}')
+	echo "递增后的最终版本号为:$final_version, 正在写入文件..."
+	content=$(cat $podspecFile)
+	content=${content/$current_version/$final_version}
+
+	# 写入文件
+	echo "$content" > $podspecFile
+	pod ipc spec $podspecFile > "${podspecFile}.json"
+}
+
+
+increase_to_version () {
+	version=$1
+
+	podspecFile=$(ls *.podspec)
+	echo "podspecFile:$podspecFile"
+
+	echo -e "\n即将递增版本号..."
+	version_line_str=$(cat *.podspec|grep "s.version ")
+	current_version=${version_line_str#*= }
+	current_version=$(echo ${current_version//\'/})
+	echo "current_version:$current_version"
+
+	final_version=$version
+
+	echo "递增后的最终版本号为:$final_version, 正在写入文件..."
+	content=$(cat $podspecFile)
+	content=${content/$current_version/$final_version}
+
+	# 写入文件
+	echo "$content" > $podspecFile
+	pod ipc spec $podspecFile > "${podspecFile}.json"
+}
+
+
+commit_and_tag (){
+	git add .
+	git commit -m "递增组件版本号到:$final_version"
+	git tag $final_version;
+	git push --tag
+	git push origin
+}
+
+pod_publish_to(){
+	source_repo=$1
+	# 发布指定版本的组件到私有源仓库
+	pod repo push $source_repo *.podspec.json --allow-warnings 
+}
+
+pod_upgrade(){
+  increase_version
+  commit_and_tag
+  pod_publish_to private_source_repo
+}
+
+pod_upgrade_to_version(){
+  version=$1
+  increase_to_version $version
+  commit_and_tag
+  pod_publish_to private_source_repo
+}

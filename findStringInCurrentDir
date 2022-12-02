@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "grep --color=auto --exclude-dir={.bzrCVS,.git,.hg,.svn.idea,.tox} -R $1 ."
+grep --color=auto --exclude-dir={.bzrCVS,.git,.hg,.svn.idea,.tox} -R $1 .

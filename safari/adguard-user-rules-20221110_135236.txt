@@ -1,0 +1,25 @@
+juejin.cn###juejin > div.recommend-box:nth-child(2) > div.extension > div.link:first-child
+juejin.cn###juejin > div.recommend-box:nth-child(2) > div.extension
+juejin.cn###juejin > div.recommend-box:nth-child(2) > div.extension
+juejin.cn###juejin > div.view-container:first-child > main.container.main-container:last-child > div.view.column-view > div.sidebar:nth-child(3) > ul.sidebar-bd-entry:nth-child(2)
+juejin.cn###juejin > div.view-container:first-child > main.container.main-container:last-child > div.view.column-view > div.sidebar:nth-child(3) > div.sidebar-block.app-download-sidebar-block.shadow:nth-child(3)
+juejin.cn###juejin > div.view-container:first-child > div.main-header-box:first-child > header.main-header.unauthorized.visible > div.container > nav.main-nav:last-child > ul.nav-list > li.main-nav-list:first-child > ul.phone-hide.isResourceVisible:last-child
+juejin.cn###juejin > div.view-container:first-child > div.main-header-box:first-child > header.main-header.unauthorized.visible > div.container > nav.main-nav:last-child > ul.nav-list > ul.right-side-nav:last-child
+juejin.cn###juejin > div.view-container:first-child > div.main-header-box:first-child
+juejin.cn###juejin > div.view-container:first-child > main.container.main-container:last-child > div.view.column-view > div.main-area.article-area:first-child > article.article:first-child > div.extension-banner:last-child
+juejin.cn###juejin > div.view-container:first-child > main.container.main-container:last-child > div.view.column-view > div.article-suspended-panel:last-child
+juejin.cn###juejin > div.view-container:first-child > main.container.main-container:last-child > div.view.column-view > div.sidebar:nth-child(3) > div.sidebar-block.related-entry-sidebar-block.shadow:nth-child(4)
+juejin.cn###juejin > div.view-container:first-child > main.container.main-container:last-child > div.view.column-view > div.main-area.recommended-area.shadow:nth-child(2)
+localhost###header
+localhost###footer
+samingzhong.github.io###header
+samingzhong.github.io###footer
+zhihu.com###root > div > div:nth-child(2) > header.Sticky.AppHeader.is-hidden.is-fixed.css-1x8hcdw:first-child > div:last-child > div.PageHeader.is-shown > div.TopstoryPageHeader.css-1kjxdzv > div.TopstoryPageHeader-main.css-tfoxxs:first-child > div.css-nxq4uo > a:first-child
+zhihu.com###root > div > div:nth-child(2) > header.Sticky.AppHeader.is-hidden.is-fixed.css-1x8hcdw:first-child > div:last-child > div.PageHeader.is-shown > div.TopstoryPageHeader.css-1kjxdzv > div.TopstoryPageHeader-aside.css-1xgntgp:last-child > button.Button.TopstoryPageHeader-askButton.css-ie8gsr.Button--primary.Button--blue:last-child
+zhihu.com###root > div > main.App-main:nth-child(4) > div.Topstory > div.Topstory-container:last-child > div.css-1qyytj7:last-child > div.css-1oy4rvw:last-child > footer.Footer:last-child
+zhihu.com###root > div > div:nth-child(2) > header.Sticky.AppHeader.is-fixed.css-1x8hcdw:first-child > div.AppHeader-inner.css-l2ygoj:nth-child(2) > a:first-child
+zhihu.com###root > div > main.App-main:nth-child(4) > div.Topstory > div.Topstory-container:last-child > div.css-1qyytj7:last-child > div.css-1oy4rvw:last-child > div.Card.GlobalSideBar-category:nth-child(2) > a.Business-Card-PcRightBanner-link:first-child > div.AdvertImg.AdvertImg--isLoaded.Business-Card-PcRightBanner-img > img
+zhihu.com###root > div > main.App-main:nth-child(4) > div.Topstory > div.Topstory-container:last-child > div.css-1qyytj7:last-child > div.css-1oy4rvw:last-child > div.Card.GlobalSideBar-category:nth-child(2) > a.Business-Card-PcRightBanner-link:first-child > div.AdvertImg.AdvertImg--isLoaded.Business-Card-PcRightBanner-img
+zhihu.com###root > div > main.App-main:nth-child(4) > div.Topstory > div.Topstory-container:last-child > div.css-1qyytj7:last-child > div.css-1oy4rvw:last-child > div.Card.GlobalSideBar-category:nth-child(2)
+zhihu.com###root > div > div:nth-child(2) > header.Sticky.AppHeader.css-1x8hcdw > div.AppHeader-inner.css-l2ygoj:nth-child(2) > a:first-child
+zhihu.com###root > div > main.App-main:nth-child(4) > div > div.Search-container:last-child > div.css-knqde:last-child > div.css-1oy4rvw:last-child > footer.Footer:last-child
