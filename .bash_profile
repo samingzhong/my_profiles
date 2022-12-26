@@ -13,15 +13,16 @@ export PUB_HOSTED_URL=https://pub.flutter-io.cn
 export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
 
 
+
 # 别名
 alias pushall='batch_push.sh'
 alias pullall='batch_pull.sh'
 alias c='clear'
-alias gs='git status'
+alias gs='echo "git status";git status'
 alias fpg='flutter pub get'
-alias pi='pod install'
-alias pii='pod install --repo-update'
-alias pru='pod repo update'
+alias pi='echo "pod install";pod install'
+alias pii='echo "pod install --repo-update";pod install --repo-update'
+alias pru='echo "pod repo update";pod repo update'
 alias st='/Applications/Sublime\ Text.app/Contents/MacOS/sublime_text'
 alias gitpush=~/.my_syn_tools/.syn_tools/git_push
 alias killflutter=ps -ef|grep flutter|awk '{print $2}'|xargs kill -9
@@ -31,11 +32,19 @@ my_blog=~/blog
 # for kafu
 alias cdKafu='cd ~/work/kafu/'
 alias openKafu='open ~/work/kafu/main/ios'
-alias cdKafuiOS='cd ~/work/kafu/main/ios'
+alias cdKafuiOS='cd ~/work/kafu/main/ios'˜
 alias kafuPodinstall='cd ~/work/kafu/main/ios/;pi'
 alias kafuFlutterPubGet='cdKafu;sh pub_get.sh'
 alias flutterPubGet='flutter pub get'
 alias flutterAttach='flutter attach'
+
+
+ip_address_wire=192.168.35.39
+ip_address_HK=192.168.81.218
+ip_address_SG=192.168.82.13
+alias sshsamingzhongWire="ssh samingzhong@${ip_address_wire}"
+alias sshsamingzhonghk="ssh samingzhong@${ip_address_HK}"
+alias sshsamingzhongsg="ssh samingzhong@${ip_address_SG}"
 
 
 # for TT iOS
@@ -69,9 +78,10 @@ alias zzz2='open -a Sublime\ Text $ios_tt2/Podfile.lock'
 
 alias ppp='echo -e "pod repo update tt-iOS-podspecs-repo";pod repo update tt-iOS-podspecs-repo'
 
-alias podupdate='pod repo update tt-iOS-podspecs-repo;pod update'
-alias podupdatepb='podupdate TTProtoBuf'
+alias podupdate='pod repo update tt-iOS-podspecs-repo'
+alias podupdatepb='echo pod update TTProtoBuf;pod update TTProtoBuf'
 alias pupb='podupdatepb'
+alias pbupdate='podupdatepb'
 alias podoutdated='echo -e "pod ourdated";pod outdated'
 alias po='podoutdated'
 
